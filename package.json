@@ -37,6 +37,7 @@
     "react-native-screens": "^3.29.0",
     "react-native-svg": "^14.1.0",
     "react-native-vector-icons": "^10.0.3",
+    "reflect-metadata": "^0.2.1",
     "styled-components": "^6.1.8",
     "toastify-react-native": "^5.0.0",
     "zod": "^3.22.4",
