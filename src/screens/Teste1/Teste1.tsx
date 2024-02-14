@@ -1,4 +1,5 @@
-import {useNavigation} from '@react-navigation/native';
+import {ParamListBase, useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import {ScrollView, View} from 'react-native';
@@ -13,7 +14,7 @@ import {
 
 export function Teste1() {
   const theme = useTheme();
-  const navigation = useNavigation();
+  const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
   const {control} = useForm();
   return (
     <ScrollView style={{flex: 1, padding: 16}}>
@@ -55,8 +56,7 @@ export function Teste1() {
               colorText="yellow"
               bgColor="purple"
               onPress={() => Toast.warn('WARNING', 'top')}
-              onLongPress={() => Toast.success('SUCCESS', 'top')
-            }
+              onLongPress={() => Toast.success('SUCCESS', 'top')}
             />
           </View>
 
